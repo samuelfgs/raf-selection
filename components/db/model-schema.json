@@ -1,0 +1,411 @@
+{
+  "id": "ID",
+  "attributes": {
+      "createdAt": "datetime",
+      "updatedAt": "datetime",
+      "publishedAt": "datetime",
+      "entries": [
+          {
+              "id": "ID",
+              "label": "string",
+              "url": "string",
+              "regimen": {
+                  "data": {
+                      "id": "ID",
+                      "attributes": {
+                          "name": "string",
+                          "romanceCopy": "text",
+                          "hybrisId": "string",
+                          "typicalUse": "text",
+                          "productType": "enumeration",
+                          "isBundle": "boolean",
+                          "shortCopy": "string",
+                          "formChoice": "boolean",
+                          "regimenColorTheme": "text",
+                          "createdAt": "datetime",
+                          "updatedAt": "datetime",
+                          "publishedAt": "datetime",
+                          "awards": {
+                              "data": [
+                                  {
+                                      "id": "ID",
+                                      "attributes": {
+                                          "name": "string",
+                                          "url": "string",
+                                          "createdAt": "datetime",
+                                          "updatedAt": "datetime",
+                                          "publishedAt": "datetime",
+                                          "icon": "media",
+                                          "products": {
+                                              "data": [
+                                                  {
+                                                      "id": "ID",
+                                                      "attributes": {
+                                                          "name": "string",
+                                                          "romanceCopy": "text",
+                                                          "hybrisId": "string",
+                                                          "typicalUse": "text",
+                                                          "productType": "enumeration",
+                                                          "isBundle": "boolean",
+                                                          "shortCopy": "string",
+                                                          "formChoice": "boolean",
+                                                          "regimenColorTheme": "text",
+                                                          "createdAt": "datetime",
+                                                          "updatedAt": "datetime",
+                                                          "publishedAt": "datetime"
+                                                      },
+                                                      "__uid": "api::product.product"
+                                                  }
+                                              ]
+                                          }
+                                      },
+                                      "__uid": "api::award.award"
+                                  }
+                              ]
+                          },
+                          "price": {
+                              "id": "ID",
+                              "currency": "enumeration",
+                              "qualifyingValue": "integer",
+                              "marketingLabel": "string",
+                              "retailPrice": {
+                                  "id": "ID",
+                                  "amount": "decimal",
+                                  "unit": "integer"
+                              },
+                              "preferredPrice": {
+                                  "id": "ID",
+                                  "amount": "decimal",
+                                  "unit": "integer"
+                              },
+                              "consultantPrice": {
+                                  "id": "ID",
+                                  "amount": "decimal",
+                                  "unit": "integer"
+                              }
+                          },
+                          "rating": {
+                              "id": "ID",
+                              "overallRating": "decimal",
+                              "numberOfReviews": "biginteger",
+                              "feedback": [
+                                  {
+                                      "id": "ID",
+                                      "customerName": "string",
+                                      "reviewText": "text",
+                                      "demographicText": "text",
+                                      "image": "media",
+                                      "thumbNail": "media"
+                                  }
+                              ]
+                          },
+                          "swatches": [
+                              {
+                                  "id": "ID",
+                                  "__component": "product.simple-product-swatches",
+                                  "desktop": [
+                                      {
+                                          "id": "ID",
+                                          "type": "enumeration",
+                                          "url": "string",
+                                          "vid_url": "string",
+                                          "youtube_vid_id": "string",
+                                          "strapi_media": "media"
+                                      }
+                                  ]
+                              }
+                          ],
+                          "ingredients": [
+                              {
+                                  "id": "ID",
+                                  "__component": "product.reg-product-ingredients",
+                                  "label": "string",
+                                  "itemized": [
+                                      {
+                                          "id": "ID",
+                                          "name": "string",
+                                          "copy": "text",
+                                          "icon": "media"
+                                      }
+                                  ]
+                              },
+                              {
+                                  "id": "ID",
+                                  "__component": "product.simple-product-ingredients",
+                                  "label": "string",
+                                  "fullList": "text",
+                                  "itemized": [
+                                      {
+                                          "id": "ID",
+                                          "name": "string",
+                                          "copy": "text",
+                                          "icon": "media"
+                                      }
+                                  ]
+                              }
+                          ],
+                          "howToUse": [
+                              {
+                                  "id": "ID",
+                                  "__component": "product.reg-how-to-use",
+                                  "subHeaderText": "string",
+                                  "headerText": "string",
+                                  "steps": [
+                                      {
+                                          "id": "ID",
+                                          "label": "string",
+                                          "usage": "text",
+                                          "note": "text"
+                                      }
+                                  ],
+                                  "image": {
+                                      "id": "ID",
+                                      "type": "enumeration",
+                                      "url": "string",
+                                      "vid_url": "string",
+                                      "youtube_vid_id": "string"
+                                  }
+                              },
+                              {
+                                  "id": "ID",
+                                  "__component": "product.simple-product-usage-details",
+                                  "label": "string",
+                                  "note": "text",
+                                  "steps": [
+                                      {
+                                          "id": "ID",
+                                          "label": "string",
+                                          "usage": "text",
+                                          "note": "text"
+                                      }
+                                  ],
+                                  "image": {
+                                      "id": "ID",
+                                      "type": "enumeration",
+                                      "url": "string",
+                                      "vid_url": "string",
+                                      "youtube_vid_id": "string"
+                                  }
+                              }
+                          ],
+                          "itemizedContent": [
+                              {
+                                  "id": "ID",
+                                  "__component": "common.bundle-info",
+                                  "cfg_bundle_list": {
+                                      "data": {
+                                          "id": "ID",
+                                          "attributes": {
+                                              "name": "string",
+                                              "label": "string",
+                                              "createdAt": "datetime",
+                                              "updatedAt": "datetime",
+                                              "publishedAt": "datetime",
+                                              "options": [
+                                                  {
+                                                      "id": "ID",
+                                                      "label": "string",
+                                                      "name": "string",
+                                                      "itemOptions": [
+                                                          {
+                                                              "id": "ID",
+                                                              "label": "string",
+                                                              "product": {
+                                                                  "data": {
+                                                                      "id": "ID",
+                                                                      "attributes": {
+                                                                          "name": "string",
+                                                                          "romanceCopy": "text",
+                                                                          "hybrisId": "string",
+                                                                          "typicalUse": "text",
+                                                                          "productType": "enumeration",
+                                                                          "isBundle": "boolean",
+                                                                          "shortCopy": "string",
+                                                                          "formChoice": "boolean",
+                                                                          "regimenColorTheme": "text",
+                                                                          "createdAt": "datetime",
+                                                                          "updatedAt": "datetime",
+                                                                          "publishedAt": "datetime",
+                                                                          "swatches": [
+                                                                              {
+                                                                                  "id": "ID",
+                                                                                  "__component": "product.simple-product-swatches",
+                                                                                  "desktop": [
+                                                                                      {
+                                                                                          "id": "ID",
+                                                                                          "type": "enumeration",
+                                                                                          "url": "string",
+                                                                                          "vid_url": "string",
+                                                                                          "youtube_vid_id": "string",
+                                                                                          "strapi_media": "media"
+                                                                                      }
+                                                                                  ],
+                                                                                  "formChoiceIcon": "media"
+                                                                              }
+                                                                          ]
+                                                                      },
+                                                                      "__uid": "api::product.product"
+                                                                  }
+                                                              }
+                                                          }
+                                                      ]
+                                                  }
+                                              ]
+                                          },
+                                          "__uid": "api::configurable-bundle-content-list.configurable-bundle-content-list"
+                                      }
+                                  }
+                              },
+                              {
+                                  "id": "ID",
+                                  "__component": "common.bundle-type2",
+                                  "name": "string",
+                                  "static_bndl_list": {
+                                      "data": {
+                                          "id": "ID",
+                                          "attributes": {
+                                              "name": "string",
+                                              "createdAt": "datetime",
+                                              "updatedAt": "datetime",
+                                              "publishedAt": "datetime",
+                                              "items": [
+                                                  {
+                                                      "id": "ID",
+                                                      "label": "string",
+                                                      "item": {
+                                                          "id": "ID",
+                                                          "label": "string",
+                                                          "product": {
+                                                              "data": {
+                                                                  "id": "ID",
+                                                                  "attributes": {
+                                                                      "name": "string",
+                                                                      "romanceCopy": "text",
+                                                                      "hybrisId": "string",
+                                                                      "typicalUse": "text",
+                                                                      "productType": "enumeration",
+                                                                      "isBundle": "boolean",
+                                                                      "shortCopy": "string",
+                                                                      "formChoice": "boolean",
+                                                                      "regimenColorTheme": "text",
+                                                                      "createdAt": "datetime",
+                                                                      "updatedAt": "datetime",
+                                                                      "publishedAt": "datetime",
+                                                                      "swatches": [
+                                                                          {
+                                                                              "id": "ID",
+                                                                              "__component": "product.simple-product-swatches",
+                                                                              "desktop": [
+                                                                                  {
+                                                                                      "id": "ID",
+                                                                                      "type": "enumeration",
+                                                                                      "url": "string",
+                                                                                      "vid_url": "string",
+                                                                                      "youtube_vid_id": "string",
+                                                                                      "strapi_media": "media"
+                                                                                  }
+                                                                              ]
+                                                                          }
+                                                                      ]
+                                                                  },
+                                                                  "__uid": "api::product.product"
+                                                              }
+                                                          }
+                                                      }
+                                                  }
+                                              ]
+                                          },
+                                          "__uid": "api::bundle-content-list.bundle-content-list"
+                                      }
+                                  }
+                              }
+                          ],
+                          "results": [
+                              {
+                                  "id": "ID",
+                                  "__component": "common.result-detail",
+                                  "label": "text",
+                                  "disclaimer": "text",
+                                  "fullStudy": "text",
+                                  "beforeAfterSubText": "string",
+                                  "items": [
+                                      {
+                                          "id": "ID",
+                                          "pct": "integer",
+                                          "copy": "text"
+                                      }
+                                  ],
+                                  "beforeAfterImage": {
+                                      "id": "ID",
+                                      "type": "enumeration",
+                                      "url": "string",
+                                      "vid_url": "string",
+                                      "youtube_vid_id": "string"
+                                  }
+                              }
+                          ],
+                          "promotedProduct": {
+                              "data": {
+                                  "id": "ID",
+                                  "attributes": {
+                                      "name": "string",
+                                      "romanceCopy": "text",
+                                      "hybrisId": "string",
+                                      "typicalUse": "text",
+                                      "productType": "enumeration",
+                                      "isBundle": "boolean",
+                                      "shortCopy": "string",
+                                      "formChoice": "boolean",
+                                      "regimenColorTheme": "text",
+                                      "createdAt": "datetime",
+                                      "updatedAt": "datetime",
+                                      "publishedAt": "datetime",
+                                      "price": {
+                                          "id": "ID",
+                                          "currency": "enumeration",
+                                          "qualifyingValue": "integer",
+                                          "marketingLabel": "string",
+                                          "retailPrice": {
+                                              "id": "ID",
+                                              "amount": "decimal",
+                                              "unit": "integer"
+                                          },
+                                          "preferredPrice": {
+                                              "id": "ID",
+                                              "amount": "decimal",
+                                              "unit": "integer"
+                                          },
+                                          "consultantPrice": {
+                                              "id": "ID",
+                                              "amount": "decimal",
+                                              "unit": "integer"
+                                          }
+                                      },
+                                      "swatches": [
+                                          {
+                                              "id": "ID",
+                                              "__component": "product.simple-product-swatches",
+                                              "desktop": [
+                                                  {
+                                                      "id": "ID",
+                                                      "type": "enumeration",
+                                                      "url": "string",
+                                                      "vid_url": "string",
+                                                      "youtube_vid_id": "string",
+                                                      "strapi_media": "media"
+                                                  }
+                                              ]
+                                          }
+                                      ]
+                                  },
+                                  "__uid": "api::product.product"
+                              }
+                          }
+                      },
+                      "__uid": "api::product.product"
+                  }
+              }
+          }
+      ]
+  }
+}
